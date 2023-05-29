@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300&display=swap');
+body{
+    background:linear-gradient(to left,#33086b, rgb(199, 41, 41));
+    font-family: poppins;
+
+}
+.img{
+    width: 150px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 50px ;
+}
+.img{
+    border: 3px solid #111;
+}
+.nome{
+    text-align: center;
+}
+.descricao{
+    text-align: center;
+}
+.cntt{
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+.wpp{
+    width: 80px
+}
+.insta{
+    width: 80px
+}
+.git{
+    width: 80px;
+}
+.fts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fts img{
+    margin-right: 30px;
+}
+ul li{
+    position: relative;
+    display: inline-block;
+    margin: 2rem 1rem;
+    width: 100px;
+    height: 100px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+ul li:after{
+    content:"";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+ul li:hover{
+    transform: scale(1.25, 1.25);
+}
+ul li:hover::after{
+    opacity: 1;
+}
